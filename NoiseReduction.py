@@ -89,16 +89,3 @@ class NoiseReduction:
         
         return (processed_tensor,)
 
-# # 添加自定义 API 路由（如果需要前端扩展功能）
-# @PromptServer.instance.routes.get("/reduce_noise_hello")
-# async def get_reduce_noise_hello(request):
-#     return web.json_response("Reduce Noise Node Active")
-
-# 注册节点映射
-NODE_CLASS_MAPPINGS = {
-    "NoiseReduction": NoiseReduction
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "NoiseReduction": "Reduce Noise Filter"
-}
